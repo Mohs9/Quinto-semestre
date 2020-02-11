@@ -195,47 +195,68 @@ Para resolverlo, se usa congruencias (n$ \in  \mathbb{Z}$ )
 \begin{center}
 \begin{tabular}{|c|c|}
 		\hline
-	$ n\equiv 0 $ $mod $ 4&$ n^2\equiv 0^2\equiv 0$ $ mod $ 4\\
+			$ n\equiv 0 $ $mod$ 8&$ n^2\equiv 0^2\equiv 0$ $ mod $ 8\\
+		\hline
+	$ n\equiv 1 $ $mod $ 8&$ n^2\equiv 1^2\equiv 1$ $ mod $ 8\\
 	\hline
-	$ n\equiv 1 $ $mod $ 4&$ n^2\equiv 1^2\equiv 1 $ $ mod $ 4\\
+	$ n\equiv 2 $ $mod $ 8&$ n^2\equiv 2^2\equiv 4 $ $ mod $ 8\\
 	\hline
-	$ n\equiv 2 $ $mod $ 4&$ n^2\equiv 2^2\equiv 0$ $ mod $ 4\\
+	$ n\equiv 3 $ $mod $ 8&$ n^2\equiv 3^2\equiv 1$ $ mod $ 8\\
 	\hline
-	$ n\equiv 3 $ $mod$ 4&$ n^2\equiv 3^2\equiv 1$ $ mod $ 4\\
+	$ n\equiv 4 $ $mod$ 8&$ n^2\equiv 4^2\equiv 0$ $ mod $ 8\\
 	\hline
+	$ n\equiv 5 $ $mod $ 8&$ n^2\equiv 5^2\equiv 1$ $ mod $ 8\\
+	\hline
+	$ n\equiv 6 $ $mod $ 8&$ n^2\equiv 6^2\equiv 4 $ $ mod $ 8\\
+	\hline
+	$ n\equiv 7 $ $mod $ 8&$ n^2\equiv 7^2\equiv 1$ $ mod $ 8\\
+	\hline
+
+
 \end{tabular}
 \end{center}
 
 Ahora por De Moivre:
 
-$ arg({z^{(4n)}}^2)= (4n)^2\frac{\pi}{4}= 4k\frac{\pi}{4} =arg(z^0)$
+$ arg({z^{(8n+1)}}^2)= (8n+1)^2\frac{\pi}{4}= (8k_1+1)\frac{\pi}{4} =arg(z)$
 
 De modo semejante:
+\medskip
 
-$ arg({z^{(4n+1)}}^2)=arg(z)$
+$ arg({z^{(8n+2)}}^2)=(8n+2)^2\frac{\pi}{4}= (8k_2+4)\frac{\pi}{4}= arg(-z^0)$
 
-$ arg({z^{(4n+2)}}^2)=arg(z^0)$
+$ arg({z^{(8n+3)}}^2)=(8n+3)^2\frac{\pi}{4}= (8k_3+1)\frac{\pi}{4}=arg(z)$
 
 
-$ arg({z^{(4n+3)}}^2)=arg(z)$
+$ arg({z^{(8n+4)}}^2)=(8n+4)^2\frac{\pi}{4}= (8k_4)\frac{\pi}{4}=arg(z^0)$
+
+$ arg({z^{(8n+5)}}^2)=(8n+5)^2\frac{\pi}{4}= (8k_5+1)\frac{\pi}{4}= arg(z)$
+
+$ arg({z^{(8n+6)}}^2)=(8n+6)^2\frac{\pi}{4}= (8k_6+4)\frac{\pi}{4}=arg(-z^0)$
+
+
+$ arg({z^{(8n+7)}}^2)=(8n+7)^2\frac{\pi}{4}= (8k_7+1)\frac{\pi}{4}=arg(z)$
+
+$ arg({z^{(8n)}}^2)=(8n)^2\frac{\pi}{4}= (8k_8)\frac{\pi}{4}=arg(z^0)$
+
 
 \bigskip
 
 Y como $ |z|=1 $:
 
 \begin{equation*}
-\left({z^1}^2+{z^2}^2+{z^3}^2+{z^4}^2+\cdots{z^{12}}^2\right)=6z+6=6(e^{i\frac{\pi}{4}}+1)
+\left({z^1}^2+{z^2}^2+{z^3}^2+{z^4}^2+\cdots{z^{12}}^2\right)=6z=6e^{i\frac{\pi}{4}}
 \end{equation*}
 
 
 \begin{equation*}
-\left(\dfrac{1}{{z^1}^2}+\dfrac{1}{{z^2}^2}+\dfrac{1}{{z^3}^2}+\dfrac{1}{{z^4}^2}+\cdots\dfrac{1}{{z^{12}}^2}\right)=6\overline{z}+6=6(e^{-i\frac{\pi}{4}}+1)
+\left(\dfrac{1}{{z^1}^2}+\dfrac{1}{{z^2}^2}+\dfrac{1}{{z^3}^2}+\dfrac{1}{{z^4}^2}+\cdots\dfrac{1}{{z^{12}}^2}\right)=6\overline{z}=6e^{-i\frac{\pi}{4}}
 \end{equation*}
 
 Por tanto:
 
 \begin{equation*}
-\left({z^1}^2+{z^2}^2+{z^3}^2+{z^4}^2+\cdots{z^{12}}^2\right)\left(\dfrac{1}{{z^1}^2}+\dfrac{1}{{z^2}^2}+\dfrac{1}{{z^3}^2}+\dfrac{1}{{z^4}^2}+\cdots\dfrac{1}{{z^{12}}^2}\right)=36(2+2\cos\left(\frac{\pi}{4}\right))=36(2+\sqrt{2})
+\left({z^1}^2+{z^2}^2+{z^3}^2+{z^4}^2+\cdots{z^{12}}^2\right)\left(\dfrac{1}{{z^1}^2}+\dfrac{1}{{z^2}^2}+\dfrac{1}{{z^3}^2}+\dfrac{1}{{z^4}^2}+\cdots\dfrac{1}{{z^{12}}^2}\right)=36
 \end{equation*}
 \end{exercise}
 
